@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id='switchbox'>
+    <p><b>点灯</b></p>
+    <p>
+    	<button type='button' data-type='on'>開始</button><button type='button' data-type='off'>停止</button></br>
+    </p>  
+    <p><b>ボリューム</b></p>
+    <p>
+    	<input type="range" name='volume' max='1' min='-1' step='0.1'>
+    </p>
+    <p><b>点滅</b></p>
+    <p>
+    	<button type='button' data-type='blinkOn'>点滅</button><button type='button' data-type='blinkOff'>点滅停止</button></br>
+    </p>
+    <p><b>点滅間隔</b></p>
+    <p>
+    	<input type="range" name='interval' max='4' min='-4' step='0.1'>
+    </p>
+    <p><b>点滅パターン</b></p>
+    <select name='pattern'>
+    	<option value='triangle'>三角波</option>
+    	<option value='burstChaos'>1/fゆらぎ</option>
+    </select>   
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="../js/backbone/underscore.js"></script>
+<script type="text/javascript" src="../js/backbone/backbone.js"></script>
+<script type="text/javascript" src="../light2.js"></script>
+<script type="text/javascript" src="../js/application/light2_sample.js"></script>
+</body>
+</html>
